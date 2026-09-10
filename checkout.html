@@ -1,0 +1,969 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - LearnHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+                Learn<span>Hub</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navigation Buttons -->
+
+            <div class="nav-buttons">
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                >
+                    🛒 Cart
+
+                    <span
+                        id="cartCount"
+                        class="cart-count"
+                    >
+                        0
+                    </span>
+
+                </a>
+
+                <a
+                    href="login.html"
+                    class="btn btn-outline"
+                >
+                    Login
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                Almost There
+            </p>
+
+            <h1>
+                Checkout
+            </h1>
+
+            <p>
+                Complete your details and review your order.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CHECKOUT SECTION
+    ====================================================== -->
+
+    <main class="checkout-section section">
+
+        <div class="container">
+
+            <div class="checkout-layout">
+
+
+                <!-- =================================================
+                     LEFT SIDE - CHECKOUT FORM
+                ================================================== -->
+
+                <div class="checkout-form-container">
+
+
+                    <!-- Contact Information -->
+
+                    <section class="checkout-card">
+
+                        <div class="checkout-card-header">
+
+                            <h2>
+                                Contact Information
+                            </h2>
+
+                            <p>
+                                Enter the email address where
+                                we'll send your order details.
+                            </p>
+
+                        </div>
+
+
+                        <div class="form-group">
+
+                            <label for="checkoutEmail">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="checkoutEmail"
+                                name="email"
+                                placeholder="Enter your email address"
+                                autocomplete="email"
+                                required
+                            >
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- Billing Information -->
+
+                    <section class="checkout-card">
+
+                        <div class="checkout-card-header">
+
+                            <h2>
+                                Billing Information
+                            </h2>
+
+                            <p>
+                                Enter your billing details.
+                            </p>
+
+                        </div>
+
+
+                        <div class="checkout-form-grid">
+
+
+                            <!-- First Name -->
+
+                            <div class="form-group">
+
+                                <label for="firstName">
+                                    First Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="firstName"
+                                    name="firstName"
+                                    placeholder="First name"
+                                    autocomplete="given-name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Last Name -->
+
+                            <div class="form-group">
+
+                                <label for="lastName">
+                                    Last Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="lastName"
+                                    name="lastName"
+                                    placeholder="Last name"
+                                    autocomplete="family-name"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Country -->
+
+                            <div class="form-group">
+
+                                <label for="country">
+                                    Country
+                                </label>
+
+                                <select
+                                    id="country"
+                                    name="country"
+                                    required
+                                >
+
+                                    <option value="">
+                                        Select Country
+                                    </option>
+
+                                    <option value="india">
+                                        India
+                                    </option>
+
+                                    <option value="usa">
+                                        United States
+                                    </option>
+
+                                    <option value="uk">
+                                        United Kingdom
+                                    </option>
+
+                                    <option value="canada">
+                                        Canada
+                                    </option>
+
+                                    <option value="australia">
+                                        Australia
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- State -->
+
+                            <div class="form-group">
+
+                                <label for="state">
+                                    State
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="state"
+                                    name="state"
+                                    placeholder="State"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- City -->
+
+                            <div class="form-group">
+
+                                <label for="city">
+                                    City
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="city"
+                                    name="city"
+                                    placeholder="City"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- ZIP Code -->
+
+                            <div class="form-group">
+
+                                <label for="zipCode">
+                                    ZIP / Postal Code
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="zipCode"
+                                    name="zipCode"
+                                    placeholder="Postal code"
+                                    required
+                                >
+
+                            </div>
+
+
+                            <!-- Address -->
+
+                            <div class="form-group full-width">
+
+                                <label for="address">
+                                    Address
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="address"
+                                    name="address"
+                                    placeholder="Street address"
+                                    autocomplete="street-address"
+                                    required
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- Payment Method -->
+
+                    <section class="checkout-card">
+
+                        <div class="checkout-card-header">
+
+                            <h2>
+                                Payment Method
+                            </h2>
+
+                            <p>
+                                Choose how you would like to pay.
+                            </p>
+
+                        </div>
+
+
+                        <!-- Payment Options -->
+
+                        <div class="payment-methods">
+
+
+                            <!-- Card -->
+
+                            <label class="payment-method">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="card"
+                                    checked
+                                >
+
+                                <span class="payment-method-content">
+
+                                    <span class="payment-icon">
+                                        💳
+                                    </span>
+
+                                    <span>
+
+                                        <strong>
+                                            Credit / Debit Card
+                                        </strong>
+
+                                        <small>
+                                            Visa, Mastercard, RuPay
+                                        </small>
+
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+
+                            <!-- UPI -->
+
+                            <label class="payment-method">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="upi"
+                                >
+
+                                <span class="payment-method-content">
+
+                                    <span class="payment-icon">
+                                        📱
+                                    </span>
+
+                                    <span>
+
+                                        <strong>
+                                            UPI
+                                        </strong>
+
+                                        <small>
+                                            Google Pay, PhonePe, Paytm
+                                        </small>
+
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+
+                            <!-- Net Banking -->
+
+                            <label class="payment-method">
+
+                                <input
+                                    type="radio"
+                                    name="paymentMethod"
+                                    value="netbanking"
+                                >
+
+                                <span class="payment-method-content">
+
+                                    <span class="payment-icon">
+                                        🏦
+                                    </span>
+
+                                    <span>
+
+                                        <strong>
+                                            Net Banking
+                                        </strong>
+
+                                        <small>
+                                            Pay using your bank account
+                                        </small>
+
+                                    </span>
+
+                                </span>
+
+                            </label>
+
+
+                        </div>
+
+
+
+                        <!-- Card Details -->
+
+                        <div
+                            id="cardPaymentDetails"
+                            class="payment-details"
+                        >
+
+                            <div class="form-group">
+
+                                <label for="cardName">
+                                    Name on Card
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cardName"
+                                    placeholder="Name on card"
+                                    autocomplete="cc-name"
+                                >
+
+                            </div>
+
+
+                            <div class="form-group">
+
+                                <label for="cardNumber">
+                                    Card Number
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="cardNumber"
+                                    placeholder="1234 5678 9012 3456"
+                                    maxlength="19"
+                                    autocomplete="cc-number"
+                                >
+
+                            </div>
+
+
+                            <div class="checkout-form-grid">
+
+
+                                <div class="form-group">
+
+                                    <label for="expiryDate">
+                                        Expiry Date
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        id="expiryDate"
+                                        placeholder="MM/YY"
+                                        maxlength="5"
+                                        autocomplete="cc-exp"
+                                    >
+
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    <label for="cvv">
+                                        CVV
+                                    </label>
+
+                                    <input
+                                        type="password"
+                                        id="cvv"
+                                        placeholder="CVV"
+                                        maxlength="4"
+                                        autocomplete="cc-csc"
+                                    >
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- UPI Details -->
+
+                        <div
+                            id="upiPaymentDetails"
+                            class="payment-details"
+                            style="display: none;"
+                        >
+
+                            <div class="form-group">
+
+                                <label for="upiId">
+                                    UPI ID
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="upiId"
+                                    placeholder="example@upi"
+                                >
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Net Banking Details -->
+
+                        <div
+                            id="netBankingDetails"
+                            class="payment-details"
+                            style="display: none;"
+                        >
+
+                            <div class="form-group">
+
+                                <label for="bank">
+                                    Select Bank
+                                </label>
+
+                                <select id="bank">
+
+                                    <option value="">
+                                        Select your bank
+                                    </option>
+
+                                    <option value="sbi">
+                                        State Bank of India
+                                    </option>
+
+                                    <option value="hdfc">
+                                        HDFC Bank
+                                    </option>
+
+                                    <option value="icici">
+                                        ICICI Bank
+                                    </option>
+
+                                    <option value="axis">
+                                        Axis Bank
+                                    </option>
+
+                                    <option value="other">
+                                        Other Bank
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- Terms -->
+
+                    <section class="checkout-card">
+
+                        <label class="terms-label">
+
+                            <input
+                                type="checkbox"
+                                id="checkoutTerms"
+                                required
+                            >
+
+                            <span>
+
+                                I agree to the
+                                <a href="#">
+                                    Terms & Conditions
+                                </a>
+                                and
+                                <a href="#">
+                                    Refund Policy
+                                </a>.
+
+                            </span>
+
+                        </label>
+
+                    </section>
+
+
+
+                    <!-- Checkout Message -->
+
+                    <div
+                        id="checkoutMessage"
+                        class="form-message"
+                    ></div>
+
+
+                    <!-- Place Order -->
+
+                    <button
+                        type="button"
+                        id="placeOrderButton"
+                        class="btn btn-primary place-order-button"
+                    >
+                        Proceed to Payment
+                    </button>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     RIGHT SIDE - ORDER SUMMARY
+                ================================================== -->
+
+                <aside class="checkout-summary">
+
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+
+                    <!-- Dynamic Checkout Items -->
+
+                    <div
+                        id="checkoutItems"
+                        class="checkout-items"
+                    >
+
+                        <!--
+                            JavaScript will insert
+                            selected courses here.
+                        -->
+
+                    </div>
+
+
+                    <!-- Summary Divider -->
+
+                    <div class="summary-divider"></div>
+
+
+                    <!-- Subtotal -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <span id="checkoutSubtotal">
+                            ₹0
+                        </span>
+
+                    </div>
+
+
+                    <!-- Discount -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            Discount
+                        </span>
+
+                        <span
+                            id="checkoutDiscount"
+                            class="discount-value"
+                        >
+                            ₹0
+                        </span>
+
+                    </div>
+
+
+                    <!-- Tax -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            Tax
+                        </span>
+
+                        <span id="checkoutTax">
+                            ₹0
+                        </span>
+
+                    </div>
+
+
+                    <!-- Divider -->
+
+                    <div class="summary-divider"></div>
+
+
+                    <!-- Total -->
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="checkoutTotal">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Security -->
+
+                    <div class="checkout-security">
+
+                        <span>
+                            🔒
+                        </span>
+
+                        <div>
+
+                            <strong>
+                                Secure Payment
+                            </strong>
+
+                            <p>
+                                Your payment information is
+                                protected.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Learn<span>Hub</span>
+                </a>
+
+                <p>
+                    Learn new skills, build your career,
+                    and achieve your goals with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Help Center
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 LearnHub. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shopping Cart - LearnHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+                Learn<span>Hub</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navigation Buttons -->
+
+            <div class="nav-buttons">
+
+                <a href="cart.html" class="cart-link">
+                    🛒 Cart
+                    <span
+                        class="cart-count"
+                        id="cartCount"
+                    >
+                        0
+                    </span>
+                </a>
+
+                <a
+                    href="login.html"
+                    class="btn btn-outline"
+                >
+                    Login
+                </a>
+
+                <a
+                    href="register.html"
+                    class="btn btn-primary"
+                >
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                Your Selection
+            </p>
+
+            <h1>
+                Shopping Cart
+            </h1>
+
+            <p>
+                Review the courses you've selected before checkout.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         CART SECTION
+    ====================================================== -->
+
+    <main class="cart-section section">
+
+        <div class="container">
+
+
+            <!-- =================================================
+                 CART CONTENT
+            ================================================== -->
+
+            <div class="cart-layout">
+
+
+                <!-- =================================================
+                     CART ITEMS
+                ================================================== -->
+
+                <div class="cart-items-container">
+
+
+                    <!-- Cart Header -->
+
+                    <div class="cart-items-header">
+
+                        <h2>
+                            Your Courses
+                        </h2>
+
+                        <span id="cartItemCount">
+                            0 items
+                        </span>
+
+                    </div>
+
+
+                    <!-- Dynamic Cart Items -->
+
+                    <div
+                        id="cartItems"
+                        class="cart-items"
+                    >
+
+                        <!--
+
+                            JavaScript will add cart items here.
+
+                            Example:
+
+                            <div class="cart-item">
+                                ...
+                            </div>
+
+                        -->
+
+                    </div>
+
+
+                    <!-- Empty Cart -->
+
+                    <div
+                        id="emptyCart"
+                        class="empty-cart"
+                        style="display: none;"
+                    >
+
+                        <div class="empty-cart-icon">
+                            🛒
+                        </div>
+
+                        <h2>
+                            Your Cart is Empty
+                        </h2>
+
+                        <p>
+                            You haven't added any courses
+                            to your cart yet.
+                        </p>
+
+                        <a
+                            href="courses.html"
+                            class="btn btn-primary"
+                        >
+                            Browse Courses
+                        </a>
+
+                    </div>
+
+
+                    <!-- Continue Shopping -->
+
+                    <div class="continue-shopping">
+
+                        <a
+                            href="courses.html"
+                            class="btn btn-outline"
+                        >
+                            ← Continue Shopping
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- =================================================
+                     ORDER SUMMARY
+                ================================================== -->
+
+                <aside class="cart-summary">
+
+
+                    <h2>
+                        Order Summary
+                    </h2>
+
+
+                    <!-- Subtotal -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            Subtotal
+                        </span>
+
+                        <span id="cartSubtotal">
+                            ₹0
+                        </span>
+
+                    </div>
+
+
+                    <!-- Discount -->
+
+                    <div class="summary-row">
+
+                        <span>
+                            Discount
+                        </span>
+
+                        <span
+                            id="cartDiscount"
+                            class="discount-value"
+                        >
+                            ₹0
+                        </span>
+
+                    </div>
+
+
+                    <!-- Divider -->
+
+                    <div class="summary-divider"></div>
+
+
+                    <!-- Total -->
+
+                    <div class="summary-total">
+
+                        <span>
+                            Total
+                        </span>
+
+                        <strong id="cartTotal">
+                            ₹0
+                        </strong>
+
+                    </div>
+
+
+                    <!-- Checkout Button -->
+
+                    <a
+                        href="checkout.html"
+                        id="checkoutButton"
+                        class="btn btn-primary checkout-button"
+                    >
+                        Proceed to Checkout
+                    </a>
+
+
+                    <!-- Security Message -->
+
+                    <div class="secure-checkout">
+
+                        <span>
+                            🔒
+                        </span>
+
+                        <p>
+                            Secure checkout
+                        </p>
+
+                    </div>
+
+
+                </aside>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         FEATURES
+    ====================================================== -->
+
+    <section class="features section">
+
+        <div class="container">
+
+            <div class="section-header">
+
+                <p class="section-subtitle">
+                    Learn With Confidence
+                </p>
+
+                <h2>
+                    Why LearnHub?
+                </h2>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <!-- Feature 1 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎓
+                    </div>
+
+                    <h3>
+                        Expert Instructors
+                    </h3>
+
+                    <p>
+                        Learn from experienced instructors
+                        and industry professionals.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 2 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        ♾️
+                    </div>
+
+                    <h3>
+                        Lifetime Access
+                    </h3>
+
+                    <p>
+                        Access your purchased courses
+                        whenever you want.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 3 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📱
+                    </div>
+
+                    <h3>
+                        Learn Anywhere
+                    </h3>
+
+                    <p>
+                        Learn from your computer,
+                        tablet, or mobile device.
+                    </p>
+
+                </div>
+
+
+                <!-- Feature 4 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🏆
+                    </div>
+
+                    <h3>
+                        Earn Certificates
+                    </h3>
+
+                    <p>
+                        Complete courses and earn
+                        certificates of completion.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Learn<span>Hub</span>
+                </a>
+
+                <p>
+                    Learn new skills, build your career,
+                    and achieve your goals with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Help Center
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 LearnHub. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

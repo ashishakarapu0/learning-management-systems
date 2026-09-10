@@ -1,0 +1,1025 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses - LearnHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ==================== NAVBAR ==================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                Learn<span>Hub</span>
+            </a>
+
+            <!-- Navigation -->
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html" class="active">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+
+                <a href="login.html" class="btn btn-outline">
+                    Login
+                </a>
+
+                <a href="register.html" class="btn btn-primary">
+                    Register
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==================== PAGE HEADER ==================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                Learn Something New
+            </p>
+
+            <h1>
+                Explore Our Courses
+            </h1>
+
+            <p>
+                Discover courses designed to help you build
+                valuable skills and achieve your goals.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== COURSES SECTION ==================== -->
+
+    <main class="courses-page section">
+
+        <div class="container">
+
+
+            <!-- ==================== COURSE CONTROLS ==================== -->
+
+            <div class="course-controls">
+
+
+                <!-- Search -->
+
+                <div class="course-search">
+
+                    <label for="courseSearch">
+                        Search Courses
+                    </label>
+
+                    <input
+                        type="text"
+                        id="courseSearch"
+                        placeholder="Search for a course..."
+                    >
+
+                </div>
+
+
+                <!-- Category Filter -->
+
+                <div class="course-filter">
+
+                    <label for="categoryFilter">
+                        Category
+                    </label>
+
+                    <select id="categoryFilter">
+
+                        <option value="all">
+                            All Categories
+                        </option>
+
+                        <option value="web-development">
+                            Web Development
+                        </option>
+
+                        <option value="programming">
+                            Programming
+                        </option>
+
+                        <option value="data-science">
+                            Data Science
+                        </option>
+
+                        <option value="design">
+                            Design
+                        </option>
+
+                        <option value="business">
+                            Business
+                        </option>
+
+                        <option value="marketing">
+                            Marketing
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Level Filter -->
+
+                <div class="course-filter">
+
+                    <label for="levelFilter">
+                        Level
+                    </label>
+
+                    <select id="levelFilter">
+
+                        <option value="all">
+                            All Levels
+                        </option>
+
+                        <option value="beginner">
+                            Beginner
+                        </option>
+
+                        <option value="intermediate">
+                            Intermediate
+                        </option>
+
+                        <option value="advanced">
+                            Advanced
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Sort -->
+
+                <div class="course-filter">
+
+                    <label for="sortCourses">
+                        Sort By
+                    </label>
+
+                    <select id="sortCourses">
+
+                        <option value="default">
+                            Default
+                        </option>
+
+                        <option value="low-high">
+                            Price: Low to High
+                        </option>
+
+                        <option value="high-low">
+                            Price: High to Low
+                        </option>
+
+                        <option value="rating">
+                            Highest Rated
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================== COURSE COUNT ==================== -->
+
+            <div class="course-list-header">
+
+                <p>
+                    Showing
+                    <strong id="courseCount">9</strong>
+                    courses
+                </p>
+
+            </div>
+
+
+            <!-- ==================== COURSE GRID ==================== -->
+
+            <div
+                class="course-grid all-courses"
+                id="courseGrid"
+            >
+
+
+                <!-- ==================== COURSE 1 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="web-development"
+                    data-level="beginner"
+                    data-price="499"
+                    data-rating="4.8"
+                >
+
+                    <img
+                        src="images/course-1.jpg"
+                        alt="HTML and CSS for Beginners"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>
+                            HTML & CSS for Beginners
+                        </h3>
+
+                        <p>
+                            Learn the fundamentals of HTML and CSS
+                            and build beautiful responsive websites.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.8
+                            </span>
+
+                            <span>
+                                12 Hours
+                            </span>
+
+                            <span>
+                                Beginner
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹499
+                            </span>
+
+                            <a
+                                href="course-details.html?id=html-css"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 2 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="programming"
+                    data-level="beginner"
+                    data-price="699"
+                    data-rating="4.9"
+                >
+
+                    <img
+                        src="images/course-2.jpg"
+                        alt="JavaScript from Scratch"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>
+                            JavaScript from Scratch
+                        </h3>
+
+                        <p>
+                            Learn JavaScript fundamentals and create
+                            interactive web applications.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.9
+                            </span>
+
+                            <span>
+                                20 Hours
+                            </span>
+
+                            <span>
+                                Beginner
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹699
+                            </span>
+
+                            <a
+                                href="course-details.html?id=javascript"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 3 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="programming"
+                    data-level="beginner"
+                    data-price="799"
+                    data-rating="4.7"
+                >
+
+                    <img
+                        src="images/course-3.jpg"
+                        alt="Python Programming"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>
+                            Python Programming
+                        </h3>
+
+                        <p>
+                            Learn Python programming from the basics
+                            and build practical projects.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.7
+                            </span>
+
+                            <span>
+                                25 Hours
+                            </span>
+
+                            <span>
+                                Beginner
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹799
+                            </span>
+
+                            <a
+                                href="course-details.html?id=python"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 4 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="data-science"
+                    data-level="intermediate"
+                    data-price="999"
+                    data-rating="4.8"
+                >
+
+                    <img
+                        src="images/course-1.jpg"
+                        alt="Data Science Fundamentals"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Data Science
+                        </span>
+
+                        <h3>
+                            Data Science Fundamentals
+                        </h3>
+
+                        <p>
+                            Understand data analysis, visualization,
+                            and essential data science concepts.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.8
+                            </span>
+
+                            <span>
+                                30 Hours
+                            </span>
+
+                            <span>
+                                Intermediate
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹999
+                            </span>
+
+                            <a
+                                href="course-details.html?id=data-science"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 5 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="web-development"
+                    data-level="intermediate"
+                    data-price="899"
+                    data-rating="4.6"
+                >
+
+                    <img
+                        src="images/course-2.jpg"
+                        alt="React Development"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Web Development
+                        </span>
+
+                        <h3>
+                            React.js Development
+                        </h3>
+
+                        <p>
+                            Learn React fundamentals and build
+                            modern interactive web applications.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.6
+                            </span>
+
+                            <span>
+                                24 Hours
+                            </span>
+
+                            <span>
+                                Intermediate
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹899
+                            </span>
+
+                            <a
+                                href="course-details.html?id=react"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 6 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="design"
+                    data-level="beginner"
+                    data-price="599"
+                    data-rating="4.7"
+                >
+
+                    <img
+                        src="images/course-3.jpg"
+                        alt="UI UX Design"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Design
+                        </span>
+
+                        <h3>
+                            UI/UX Design Fundamentals
+                        </h3>
+
+                        <p>
+                            Learn the basics of user interface and
+                            user experience design.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.7
+                            </span>
+
+                            <span>
+                                16 Hours
+                            </span>
+
+                            <span>
+                                Beginner
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹599
+                            </span>
+
+                            <a
+                                href="course-details.html?id=ui-ux"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 7 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="business"
+                    data-level="intermediate"
+                    data-price="749"
+                    data-rating="4.5"
+                >
+
+                    <img
+                        src="images/course-1.jpg"
+                        alt="Business Management"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Business
+                        </span>
+
+                        <h3>
+                            Business Management
+                        </h3>
+
+                        <p>
+                            Learn important concepts of business
+                            planning, management, and leadership.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.5
+                            </span>
+
+                            <span>
+                                18 Hours
+                            </span>
+
+                            <span>
+                                Intermediate
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹749
+                            </span>
+
+                            <a
+                                href="course-details.html?id=business"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 8 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="marketing"
+                    data-level="beginner"
+                    data-price="649"
+                    data-rating="4.6"
+                >
+
+                    <img
+                        src="images/course-2.jpg"
+                        alt="Digital Marketing"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Marketing
+                        </span>
+
+                        <h3>
+                            Digital Marketing Basics
+                        </h3>
+
+                        <p>
+                            Learn SEO, social media marketing,
+                            content marketing, and online advertising.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.6
+                            </span>
+
+                            <span>
+                                15 Hours
+                            </span>
+
+                            <span>
+                                Beginner
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹649
+                            </span>
+
+                            <a
+                                href="course-details.html?id=digital-marketing"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ==================== COURSE 9 ==================== -->
+
+                <div
+                    class="course-card"
+                    data-category="programming"
+                    data-level="advanced"
+                    data-price="1199"
+                    data-rating="4.9"
+                >
+
+                    <img
+                        src="images/course-3.jpg"
+                        alt="Advanced JavaScript"
+                    >
+
+                    <div class="course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>
+                            Advanced JavaScript
+                        </h3>
+
+                        <p>
+                            Master advanced JavaScript concepts,
+                            APIs, asynchronous programming, and more.
+                        </p>
+
+                        <div class="course-info">
+
+                            <span>
+                                ⭐ 4.9
+                            </span>
+
+                            <span>
+                                35 Hours
+                            </span>
+
+                            <span>
+                                Advanced
+                            </span>
+
+                        </div>
+
+                        <div class="course-bottom">
+
+                            <span class="course-price">
+                                ₹1199
+                            </span>
+
+                            <a
+                                href="course-details.html?id=advanced-javascript"
+                                class="btn btn-primary"
+                            >
+                                View Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================== NO RESULTS ==================== -->
+
+            <div
+                id="noCourses"
+                class="no-courses"
+                style="display: none;"
+            >
+
+                <h3>
+                    No Courses Found
+                </h3>
+
+                <p>
+                    Try changing your search or filter options.
+                </p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==================== CTA ==================== -->
+
+    <section class="cta section">
+
+        <div class="container cta-container">
+
+            <div class="cta-content">
+
+                <h2>
+                    Start Learning Today
+                </h2>
+
+                <p>
+                    Create your free account and start exploring
+                    courses that match your goals.
+                </p>
+
+                <a
+                    href="register.html"
+                    class="btn btn-primary"
+                >
+                    Create Your Account
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ==================== FOOTER ==================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Learn<span>Hub</span>
+                </a>
+
+                <p>
+                    Learn new skills, build your career,
+                    and achieve your goals with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Help Center
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 LearnHub. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

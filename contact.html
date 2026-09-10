@@ -1,0 +1,424 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact Us | LearnHub</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="categories.html">Categories</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html" class="active">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+
+                <a href="wishlist.html">
+                    ♡ Wishlist
+                </a>
+
+                <a href="cart.html">
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+                <a href="login.html" id="login-link">
+                    Login
+                </a>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= CONTACT HERO ================= -->
+    <section class="contact-hero">
+
+        <div class="contact-hero-content">
+
+            <h1>Contact Us</h1>
+
+            <p>
+                Have a question or need help?
+                We'd love to hear from you.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT SECTION ================= -->
+    <section class="contact-section">
+
+        <div class="contact-container">
+
+            <!-- ================= CONTACT INFORMATION ================= -->
+            <div class="contact-info">
+
+                <h2>Get in Touch</h2>
+
+                <p>
+                    If you have any questions about our courses, payments,
+                    account, or anything else, feel free to contact us.
+                </p>
+
+
+                <!-- Email -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📧
+                    </div>
+
+                    <div>
+                        <h3>Email</h3>
+
+                        <p>
+                            support@learnhub.com
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Phone -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📞
+                    </div>
+
+                    <div>
+                        <h3>Phone</h3>
+
+                        <p>
+                            +91 98765 43210
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Address -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        📍
+                    </div>
+
+                    <div>
+                        <h3>Address</h3>
+
+                        <p>
+                            LearnHub Learning Center<br>
+                            Hyderabad, Telangana, India
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- Working Hours -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        🕐
+                    </div>
+
+                    <div>
+                        <h3>Working Hours</h3>
+
+                        <p>
+                            Monday - Friday<br>
+                            9:00 AM - 6:00 PM
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CONTACT FORM ================= -->
+            <div class="contact-form-container">
+
+                <h2>Send Us a Message</h2>
+
+                <form id="contact-form">
+
+                    <!-- Name -->
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Email -->
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Subject -->
+                    <div class="form-group">
+
+                        <label for="subject">
+                            Subject
+                        </label>
+
+                        <input
+                            type="text"
+                            id="subject"
+                            name="subject"
+                            placeholder="Enter the subject"
+                            required
+                        >
+
+                    </div>
+
+
+                    <!-- Message -->
+                    <div class="form-group">
+
+                        <label for="message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="message"
+                            name="message"
+                            rows="6"
+                            placeholder="Write your message..."
+                            required
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- Submit Button -->
+                    <button
+                        type="submit"
+                        class="btn"
+                    >
+                        Send Message
+                    </button>
+
+                </form>
+
+
+                <!-- Success/Error Message -->
+                <div
+                    id="contact-message"
+                    class="form-message"
+                ></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FAQ SHORTCUT ================= -->
+    <section class="contact-faq">
+
+        <div class="section-heading">
+
+            <h2>Need Quick Help?</h2>
+
+            <p>
+                Check our frequently asked questions before contacting us.
+            </p>
+
+            <a href="faq.html" class="btn">
+                Visit FAQ
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future with
+                    online courses.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Support -->
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Social Media -->
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>LinkedIn</p>
+                <p>YouTube</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

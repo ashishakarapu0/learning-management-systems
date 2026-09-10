@@ -1,0 +1,1011 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - LearnHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+                Learn<span>Hub</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navigation Buttons -->
+
+            <div class="nav-buttons">
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                >
+                    🛒 Cart
+
+                    <span
+                        id="cartCount"
+                        class="cart-count"
+                    >
+                        0
+                    </span>
+
+                </a>
+
+                <a
+                    href="my-courses.html"
+                    class="btn btn-outline"
+                >
+                    My Courses
+                </a>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="btn btn-primary"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                Account
+            </p>
+
+            <h1>
+                My Profile
+            </h1>
+
+            <p>
+                Manage your account and learning preferences.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PROFILE SECTION
+    ====================================================== -->
+
+    <main class="profile-section section">
+
+        <div class="container">
+
+            <div class="profile-layout">
+
+
+                <!-- =================================================
+                     PROFILE SIDEBAR
+                ================================================== -->
+
+                <aside class="profile-sidebar">
+
+
+                    <!-- Profile Card -->
+
+                    <div class="profile-card">
+
+
+                        <!-- Avatar -->
+
+                        <div
+                            class="profile-avatar"
+                            id="profileAvatar"
+                        >
+                            U
+                        </div>
+
+
+                        <!-- Name -->
+
+                        <h2 id="profileName">
+                            User Name
+                        </h2>
+
+
+                        <!-- Email -->
+
+                        <p id="profileEmail">
+                            user@example.com
+                        </p>
+
+
+                        <!-- Edit Profile Button -->
+
+                        <button
+                            type="button"
+                            id="editProfileButton"
+                            class="btn btn-primary profile-edit-button"
+                        >
+                            Edit Profile
+                        </button>
+
+                    </div>
+
+
+
+                    <!-- Profile Navigation -->
+
+                    <nav class="profile-navigation">
+
+                        <a
+                            href="#personalInformation"
+                            class="profile-nav-link active"
+                        >
+                            👤 Personal Information
+                        </a>
+
+                        <a
+                            href="#learningStatistics"
+                            class="profile-nav-link"
+                        >
+                            📊 Learning Statistics
+                        </a>
+
+                        <a
+                            href="my-courses.html"
+                            class="profile-nav-link"
+                        >
+                            📚 My Courses
+                        </a>
+
+                        <a
+                            href="cart.html"
+                            class="profile-nav-link"
+                        >
+                            🛒 My Cart
+                        </a>
+
+                        <a
+                            href="#accountSettings"
+                            class="profile-nav-link"
+                        >
+                            ⚙️ Account Settings
+                        </a>
+
+                        <button
+                            type="button"
+                            id="profileLogoutButton"
+                            class="profile-logout"
+                        >
+                            🚪 Logout
+                        </button>
+
+                    </nav>
+
+                </aside>
+
+
+
+                <!-- =================================================
+                     PROFILE MAIN CONTENT
+                ================================================== -->
+
+                <div class="profile-content">
+
+
+                    <!-- =================================================
+                         PERSONAL INFORMATION
+                    ================================================== -->
+
+                    <section
+                        id="personalInformation"
+                        class="profile-content-card"
+                    >
+
+                        <div class="profile-content-header">
+
+                            <div>
+
+                                <p class="section-subtitle">
+                                    Account Details
+                                </p>
+
+                                <h2>
+                                    Personal Information
+                                </h2>
+
+                            </div>
+
+                            <span class="profile-status">
+                                ✓ Active
+                            </span>
+
+                        </div>
+
+
+
+                        <!-- Profile Form -->
+
+                        <form id="profileForm">
+
+
+                            <!-- Full Name -->
+
+                            <div class="form-group">
+
+                                <label for="profileFullName">
+                                    Full Name
+                                </label>
+
+                                <input
+                                    type="text"
+                                    id="profileFullName"
+                                    name="fullName"
+                                    placeholder="Enter your full name"
+                                    autocomplete="name"
+                                    value=""
+                                    disabled
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <!-- Email -->
+
+                            <div class="form-group">
+
+                                <label for="profileEmailInput">
+                                    Email Address
+                                </label>
+
+                                <input
+                                    type="email"
+                                    id="profileEmailInput"
+                                    name="email"
+                                    placeholder="Enter your email"
+                                    autocomplete="email"
+                                    value=""
+                                    disabled
+                                    required
+                                >
+
+                            </div>
+
+
+
+                            <!-- Phone -->
+
+                            <div class="form-group">
+
+                                <label for="profilePhone">
+                                    Phone Number
+                                </label>
+
+                                <input
+                                    type="tel"
+                                    id="profilePhone"
+                                    name="phone"
+                                    placeholder="Enter your phone number"
+                                    autocomplete="tel"
+                                    value=""
+                                    disabled
+                                >
+
+                            </div>
+
+
+
+                            <!-- Date of Birth -->
+
+                            <div class="form-group">
+
+                                <label for="profileDob">
+                                    Date of Birth
+                                </label>
+
+                                <input
+                                    type="date"
+                                    id="profileDob"
+                                    name="dateOfBirth"
+                                    disabled
+                                >
+
+                            </div>
+
+
+
+                            <!-- Bio -->
+
+                            <div class="form-group">
+
+                                <label for="profileBio">
+                                    About Me
+                                </label>
+
+                                <textarea
+                                    id="profileBio"
+                                    name="bio"
+                                    rows="5"
+                                    placeholder="Tell us a little about yourself..."
+                                    disabled
+                                ></textarea>
+
+                            </div>
+
+
+
+                            <!-- Form Buttons -->
+
+                            <div
+                                id="profileFormButtons"
+                                class="profile-form-buttons"
+                                style="display: none;"
+                            >
+
+                                <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                >
+                                    Save Changes
+                                </button>
+
+                                <button
+                                    type="button"
+                                    id="cancelProfileEdit"
+                                    class="btn btn-outline"
+                                >
+                                    Cancel
+                                </button>
+
+                            </div>
+
+
+                            <!-- Success Message -->
+
+                            <div
+                                id="profileMessage"
+                                class="form-message"
+                            ></div>
+
+                        </form>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         LEARNING STATISTICS
+                    ================================================== -->
+
+                    <section
+                        id="learningStatistics"
+                        class="profile-content-card"
+                    >
+
+                        <div class="profile-content-header">
+
+                            <div>
+
+                                <p class="section-subtitle">
+                                    Your Progress
+                                </p>
+
+                                <h2>
+                                    Learning Statistics
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div class="profile-statistics">
+
+
+                            <!-- Enrolled Courses -->
+
+                            <div class="profile-stat-card">
+
+                                <div class="profile-stat-icon">
+                                    📚
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Enrolled Courses
+                                    </span>
+
+                                    <strong id="profileEnrolledCourses">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Completed -->
+
+                            <div class="profile-stat-card">
+
+                                <div class="profile-stat-icon">
+                                    🏆
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Completed
+                                    </span>
+
+                                    <strong id="profileCompletedCourses">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Hours -->
+
+                            <div class="profile-stat-card">
+
+                                <div class="profile-stat-icon">
+                                    ⏱️
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Learning Hours
+                                    </span>
+
+                                    <strong id="profileLearningHours">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Certificates -->
+
+                            <div class="profile-stat-card">
+
+                                <div class="profile-stat-icon">
+                                    🎓
+                                </div>
+
+                                <div>
+
+                                    <span>
+                                        Certificates
+                                    </span>
+
+                                    <strong id="profileCertificates">
+                                        0
+                                    </strong>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         RECENT ACTIVITY
+                    ================================================== -->
+
+                    <section class="profile-content-card">
+
+                        <div class="profile-content-header">
+
+                            <div>
+
+                                <p class="section-subtitle">
+                                    Activity
+                                </p>
+
+                                <h2>
+                                    Recent Activity
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <div
+                            id="recentActivity"
+                            class="activity-list"
+                        >
+
+
+                            <!-- Activity 1 -->
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    ▶️
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <h3>
+                                        Continued JavaScript from Scratch
+                                    </h3>
+
+                                    <p>
+                                        You completed a lesson.
+                                    </p>
+
+                                    <span>
+                                        Recently
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Activity 2 -->
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    🎓
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <h3>
+                                        Completed HTML & CSS for Beginners
+                                    </h3>
+
+                                    <p>
+                                        Your course certificate is ready.
+                                    </p>
+
+                                    <span>
+                                        Recently
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+
+                            <!-- Activity 3 -->
+
+                            <div class="activity-item">
+
+                                <div class="activity-icon">
+                                    🛒
+                                </div>
+
+                                <div class="activity-content">
+
+                                    <h3>
+                                        Added Python Programming
+                                    </h3>
+
+                                    <p>
+                                        Course added to your learning library.
+                                    </p>
+
+                                    <span>
+                                        Recently
+                                    </span>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                    </section>
+
+
+
+                    <!-- =================================================
+                         ACCOUNT SETTINGS
+                    ================================================== -->
+
+                    <section
+                        id="accountSettings"
+                        class="profile-content-card"
+                    >
+
+                        <div class="profile-content-header">
+
+                            <div>
+
+                                <p class="section-subtitle">
+                                    Security
+                                </p>
+
+                                <h2>
+                                    Account Settings
+                                </h2>
+
+                            </div>
+
+                        </div>
+
+
+
+                        <!-- Change Password -->
+
+                        <div class="settings-item">
+
+                            <div>
+
+                                <h3>
+                                    Change Password
+                                </h3>
+
+                                <p>
+                                    Update your password to keep
+                                    your account secure.
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                id="changePasswordButton"
+                                class="btn btn-outline"
+                            >
+                                Change Password
+                            </button>
+
+                        </div>
+
+
+
+                        <!-- Email Notifications -->
+
+                        <div class="settings-item">
+
+                            <div>
+
+                                <h3>
+                                    Email Notifications
+                                </h3>
+
+                                <p>
+                                    Receive updates about courses
+                                    and your account.
+                                </p>
+
+                            </div>
+
+                            <label class="toggle-switch">
+
+                                <input
+                                    type="checkbox"
+                                    id="emailNotifications"
+                                    checked
+                                >
+
+                                <span class="toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- Marketing Emails -->
+
+                        <div class="settings-item">
+
+                            <div>
+
+                                <h3>
+                                    Course Recommendations
+                                </h3>
+
+                                <p>
+                                    Receive personalized course
+                                    recommendations.
+                                </p>
+
+                            </div>
+
+                            <label class="toggle-switch">
+
+                                <input
+                                    type="checkbox"
+                                    id="courseRecommendations"
+                                    checked
+                                >
+
+                                <span class="toggle-slider"></span>
+
+                            </label>
+
+                        </div>
+
+
+
+                        <!-- Delete Account -->
+
+                        <div class="settings-item danger-setting">
+
+                            <div>
+
+                                <h3>
+                                    Delete Account
+                                </h3>
+
+                                <p>
+                                    Permanently remove your
+                                    LearnHub account.
+                                </p>
+
+                            </div>
+
+                            <button
+                                type="button"
+                                id="deleteAccountButton"
+                                class="btn btn-danger"
+                            >
+                                Delete Account
+                            </button>
+
+                        </div>
+
+
+                    </section>
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         CALL TO ACTION
+    ====================================================== -->
+
+    <section class="cta section">
+
+        <div class="container cta-container">
+
+            <div class="cta-content">
+
+                <h2>
+                    Keep Learning
+                </h2>
+
+                <p>
+                    Explore new courses and continue building
+                    your skills.
+                </p>
+
+                <a
+                    href="courses.html"
+                    class="btn btn-primary"
+                >
+                    Explore Courses
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Learn<span>Hub</span>
+                </a>
+
+                <p>
+                    Learn new skills, build your career,
+                    and achieve your goals with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Help Center
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 LearnHub. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

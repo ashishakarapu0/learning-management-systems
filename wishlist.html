@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Wishlist | LearnHub</title>
+
+    <!-- Common CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header>
+
+        <nav class="navbar">
+
+            <!-- Logo -->
+            <div class="logo">
+                <a href="index.html">LearnHub</a>
+            </div>
+
+
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="courses.html">Courses</a>
+                </li>
+
+                <li>
+                    <a href="categories.html">Categories</a>
+                </li>
+
+                <li>
+                    <a href="about.html">About</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+
+            </ul>
+
+
+            <!-- Navigation Actions -->
+            <div class="nav-actions">
+
+                <a href="wishlist.html" class="active">
+                    ♡ Wishlist
+                </a>
+
+                <a href="cart.html">
+                    🛒 Cart
+                    <span id="cart-count">0</span>
+                </a>
+
+                <a href="login.html" id="login-link">
+                    Login
+                </a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= WISHLIST HERO ================= -->
+    <section class="wishlist-hero">
+
+        <div class="wishlist-hero-content">
+
+            <h1>My Wishlist</h1>
+
+            <p>
+                Save courses you're interested in and come back to them later.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= WISHLIST SECTION ================= -->
+    <section class="wishlist-section">
+
+        <div class="wishlist-container">
+
+            <!-- Page Heading -->
+            <div class="section-heading">
+
+                <h2>Saved Courses</h2>
+
+                <p>
+                    Courses you've added to your wishlist will appear here.
+                </p>
+
+            </div>
+
+
+            <!-- ================= WISHLIST COURSES ================= -->
+            <!--
+                JavaScript will dynamically add wishlist courses
+                inside this container.
+            -->
+            <div
+                class="wishlist-grid"
+                id="wishlist-container"
+            >
+
+                <!--
+                    Example course card:
+
+                    <div class="course-card">
+
+                        <img src="assets/images/course1.jpg"
+                             alt="Web Development">
+
+                        <div class="course-card-content">
+
+                            <h3>Complete Web Development</h3>
+
+                            <p>John Doe</p>
+
+                            <div class="course-rating">
+                                ⭐ 4.8
+                            </div>
+
+                            <div class="course-price">
+                                ₹999
+                            </div>
+
+                            <button>
+                                Add to Cart
+                            </button>
+
+                            <button>
+                                Remove
+                            </button>
+
+                        </div>
+
+                    </div>
+                -->
+
+            </div>
+
+
+            <!-- ================= EMPTY WISHLIST ================= -->
+            <div
+                class="empty-wishlist"
+                id="empty-wishlist"
+            >
+
+                <div class="empty-wishlist-icon">
+                    ♡
+                </div>
+
+                <h2>Your Wishlist is Empty</h2>
+
+                <p>
+                    You haven't added any courses to your wishlist yet.
+                </p>
+
+                <a
+                    href="courses.html"
+                    class="btn"
+                >
+                    Explore Courses
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= RECOMMENDED COURSES ================= -->
+    <section class="recommended-section">
+
+        <div class="section-heading">
+
+            <h2>You May Also Like</h2>
+
+            <p>
+                Explore some of our popular courses.
+            </p>
+
+        </div>
+
+
+        <div class="course-grid">
+
+            <!-- Course 1 -->
+            <div class="course-card">
+
+                <img
+                    src="assets/images/course1.jpg"
+                    alt="Web Development Course"
+                >
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        Web Development
+                    </span>
+
+                    <h3>
+                        Complete Web Development
+                    </h3>
+
+                    <p>
+                        Learn HTML, CSS and JavaScript from scratch.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.8
+                        </span>
+
+                        <span>
+                            12 Hours
+                        </span>
+
+                    </div>
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹999
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn-small"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Course 2 -->
+            <div class="course-card">
+
+                <img
+                    src="assets/images/course2.jpg"
+                    alt="Python Programming Course"
+                >
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        Programming
+                    </span>
+
+                    <h3>
+                        Python Programming
+                    </h3>
+
+                    <p>
+                        Learn Python programming from beginner to advanced.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.7
+                        </span>
+
+                        <span>
+                            15 Hours
+                        </span>
+
+                    </div>
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹799
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn-small"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- Course 3 -->
+            <div class="course-card">
+
+                <img
+                    src="assets/images/course3.jpg"
+                    alt="UI UX Design Course"
+                >
+
+                <div class="course-card-content">
+
+                    <span class="course-category">
+                        Design
+                    </span>
+
+                    <h3>
+                        UI/UX Design
+                    </h3>
+
+                    <p>
+                        Learn the fundamentals of modern UI and UX design.
+                    </p>
+
+                    <div class="course-info">
+
+                        <span>
+                            ⭐ 4.6
+                        </span>
+
+                        <span>
+                            10 Hours
+                        </span>
+
+                    </div>
+
+                    <div class="course-bottom">
+
+                        <span class="course-price">
+                            ₹699
+                        </span>
+
+                        <a
+                            href="course-details.html"
+                            class="btn-small"
+                        >
+                            View Course
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="footer-container">
+
+
+            <!-- Company -->
+            <div class="footer-column">
+
+                <h3>LearnHub</h3>
+
+                <p>
+                    Learn new skills and build your future with
+                    online courses.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+            <div class="footer-column">
+
+                <h3>Quick Links</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="courses.html">
+                            Courses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="categories.html">
+                            Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="about.html">
+                            About
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Support -->
+            <div class="footer-column">
+
+                <h3>Support</h3>
+
+                <ul>
+
+                    <li>
+                        <a href="contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="faq.html">
+                            FAQ
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms & Conditions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- Social Media -->
+            <div class="footer-column">
+
+                <h3>Follow Us</h3>
+
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>LinkedIn</p>
+                <p>YouTube</p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom">
+
+            <p>
+                &copy; 2026 LearnHub. All Rights Reserved.
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Common JavaScript -->
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

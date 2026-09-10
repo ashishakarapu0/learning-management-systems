@@ -1,0 +1,951 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Courses - LearnHub</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         NAVBAR
+    ====================================================== -->
+
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="logo">
+                Learn<span>Hub</span>
+            </a>
+
+
+            <!-- Navigation -->
+
+            <nav class="nav-menu">
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </nav>
+
+
+            <!-- Navigation Buttons -->
+
+            <div class="nav-buttons">
+
+                <a
+                    href="cart.html"
+                    class="cart-link"
+                >
+                    🛒 Cart
+
+                    <span
+                        id="cartCount"
+                        class="cart-count"
+                    >
+                        0
+                    </span>
+
+                </a>
+
+                <a
+                    href="profile.html"
+                    class="btn btn-outline"
+                >
+                    Profile
+                </a>
+
+                <button
+                    type="button"
+                    id="logoutButton"
+                    class="btn btn-primary"
+                >
+                    Logout
+                </button>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         PAGE HEADER
+    ====================================================== -->
+
+    <section class="page-header">
+
+        <div class="container">
+
+            <p class="section-subtitle">
+                Your Learning
+            </p>
+
+            <h1>
+                My Courses
+            </h1>
+
+            <p id="welcomeMessage">
+                Continue learning and build your skills.
+            </p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         MY COURSES SECTION
+    ====================================================== -->
+
+    <main class="my-courses-section section">
+
+        <div class="container">
+
+
+            <!-- =================================================
+                 DASHBOARD SUMMARY
+            ================================================== -->
+
+            <div class="learning-summary">
+
+
+                <!-- Total Courses -->
+
+                <div class="summary-card">
+
+                    <div class="summary-card-icon">
+                        📚
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Enrolled Courses
+                        </span>
+
+                        <strong id="enrolledCourseCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Completed Courses -->
+
+                <div class="summary-card">
+
+                    <div class="summary-card-icon">
+                        🏆
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Completed
+                        </span>
+
+                        <strong id="completedCourseCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Learning Hours -->
+
+                <div class="summary-card">
+
+                    <div class="summary-card-icon">
+                        ⏱️
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Learning Hours
+                        </span>
+
+                        <strong id="learningHours">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Certificates -->
+
+                <div class="summary-card">
+
+                    <div class="summary-card-icon">
+                        🎓
+                    </div>
+
+                    <div>
+
+                        <span>
+                            Certificates
+                        </span>
+
+                        <strong id="certificateCount">
+                            0
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 COURSE FILTER
+            ================================================== -->
+
+            <div class="my-courses-controls">
+
+
+                <!-- Search -->
+
+                <div class="course-search">
+
+                    <label for="myCourseSearch">
+                        Search My Courses
+                    </label>
+
+                    <input
+                        type="text"
+                        id="myCourseSearch"
+                        placeholder="Search your courses..."
+                    >
+
+                </div>
+
+
+                <!-- Status -->
+
+                <div class="course-filter">
+
+                    <label for="courseStatusFilter">
+                        Status
+                    </label>
+
+                    <select id="courseStatusFilter">
+
+                        <option value="all">
+                            All Courses
+                        </option>
+
+                        <option value="in-progress">
+                            In Progress
+                        </option>
+
+                        <option value="completed">
+                            Completed
+                        </option>
+
+                        <option value="not-started">
+                            Not Started
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 CONTINUE LEARNING
+            ================================================== -->
+
+            <section class="continue-learning">
+
+                <div class="section-header-left">
+
+                    <div>
+
+                        <p class="section-subtitle">
+                            Keep Going
+                        </p>
+
+                        <h2>
+                            Continue Learning
+                        </h2>
+
+                    </div>
+
+                    <a
+                        href="courses.html"
+                        class="btn btn-outline"
+                    >
+                        Browse Courses
+                    </a>
+
+                </div>
+
+
+                <!-- Continue Learning Course -->
+
+                <div
+                    id="continueCourse"
+                    class="continue-course-card"
+                >
+
+                    <div class="continue-course-image">
+
+                        <img
+                            src="images/course-2.jpg"
+                            alt="JavaScript from Scratch"
+                        >
+
+                    </div>
+
+
+                    <div class="continue-course-content">
+
+                        <span class="course-category">
+                            Programming
+                        </span>
+
+                        <h3>
+                            JavaScript from Scratch
+                        </h3>
+
+                        <p>
+                            Continue learning JavaScript and
+                            build interactive web applications.
+                        </p>
+
+
+                        <!-- Progress -->
+
+                        <div class="progress-section">
+
+                            <div class="progress-info">
+
+                                <span>
+                                    Progress
+                                </span>
+
+                                <strong>
+                                    45%
+                                </strong>
+
+                            </div>
+
+                            <div class="progress-bar">
+
+                                <div
+                                    class="progress-fill"
+                                    style="width: 45%;"
+                                ></div>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Continue Button -->
+
+                        <a
+                            href="learn-course.html?id=javascript"
+                            class="btn btn-primary"
+                        >
+                            Continue Learning
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+
+            <!-- =================================================
+                 ALL MY COURSES
+            ================================================== -->
+
+            <section class="all-my-courses">
+
+                <div class="section-header-left">
+
+                    <div>
+
+                        <p class="section-subtitle">
+                            Your Library
+                        </p>
+
+                        <h2>
+                            All My Courses
+                        </h2>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Dynamic Courses -->
+
+                <div
+                    id="myCoursesGrid"
+                    class="course-grid"
+                >
+
+
+                    <!-- =================================================
+                         COURSE 1
+                    ================================================== -->
+
+                    <div
+                        class="course-card my-course-card"
+                        data-status="in-progress"
+                        data-course-id="javascript"
+                    >
+
+                        <img
+                            src="images/course-2.jpg"
+                            alt="JavaScript from Scratch"
+                        >
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Programming
+                            </span>
+
+                            <h3>
+                                JavaScript from Scratch
+                            </h3>
+
+                            <p>
+                                Learn JavaScript fundamentals
+                                and create interactive websites.
+                            </p>
+
+
+                            <!-- Progress -->
+
+                            <div class="progress-section">
+
+                                <div class="progress-info">
+
+                                    <span>
+                                        Progress
+                                    </span>
+
+                                    <strong>
+                                        45%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div
+                                        class="progress-fill"
+                                        style="width: 45%;"
+                                    ></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Course Button -->
+
+                            <a
+                                href="learn-course.html?id=javascript"
+                                class="btn btn-primary"
+                            >
+                                Continue Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         COURSE 2
+                    ================================================== -->
+
+                    <div
+                        class="course-card my-course-card"
+                        data-status="completed"
+                        data-course-id="html-css"
+                    >
+
+                        <img
+                            src="images/course-1.jpg"
+                            alt="HTML and CSS for Beginners"
+                        >
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Web Development
+                            </span>
+
+                            <h3>
+                                HTML & CSS for Beginners
+                            </h3>
+
+                            <p>
+                                Learn HTML and CSS and build
+                                responsive websites.
+                            </p>
+
+
+                            <!-- Progress -->
+
+                            <div class="progress-section">
+
+                                <div class="progress-info">
+
+                                    <span>
+                                        Progress
+                                    </span>
+
+                                    <strong>
+                                        100%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div
+                                        class="progress-fill completed"
+                                        style="width: 100%;"
+                                    ></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Certificate -->
+
+                            <a
+                                href="certificate.html?id=html-css"
+                                class="btn btn-outline"
+                            >
+                                View Certificate
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+
+                    <!-- =================================================
+                         COURSE 3
+                    ================================================== -->
+
+                    <div
+                        class="course-card my-course-card"
+                        data-status="not-started"
+                        data-course-id="python"
+                    >
+
+                        <img
+                            src="images/course-3.jpg"
+                            alt="Python Programming"
+                        >
+
+
+                        <div class="course-content">
+
+                            <span class="course-category">
+                                Programming
+                            </span>
+
+                            <h3>
+                                Python Programming
+                            </h3>
+
+                            <p>
+                                Learn Python programming and
+                                build practical projects.
+                            </p>
+
+
+                            <!-- Progress -->
+
+                            <div class="progress-section">
+
+                                <div class="progress-info">
+
+                                    <span>
+                                        Progress
+                                    </span>
+
+                                    <strong>
+                                        0%
+                                    </strong>
+
+                                </div>
+
+                                <div class="progress-bar">
+
+                                    <div
+                                        class="progress-fill"
+                                        style="width: 0%;"
+                                    ></div>
+
+                                </div>
+
+                            </div>
+
+
+                            <!-- Start Course -->
+
+                            <a
+                                href="learn-course.html?id=python"
+                                class="btn btn-primary"
+                            >
+                                Start Course
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- =================================================
+                     NO COURSES
+                ================================================== -->
+
+                <div
+                    id="noMyCourses"
+                    class="empty-cart"
+                    style="display: none;"
+                >
+
+                    <div class="empty-cart-icon">
+                        📚
+                    </div>
+
+                    <h2>
+                        No Courses Found
+                    </h2>
+
+                    <p>
+                        You don't have any courses matching
+                        your search.
+                    </p>
+
+                    <a
+                        href="courses.html"
+                        class="btn btn-primary"
+                    >
+                        Explore Courses
+                    </a>
+
+                </div>
+
+            </section>
+
+
+        </div>
+
+    </main>
+
+
+
+    <!-- =====================================================
+         LEARNING TIPS
+    ====================================================== -->
+
+    <section class="features section">
+
+        <div class="container">
+
+
+            <div class="section-header">
+
+                <p class="section-subtitle">
+                    Learn Better
+                </p>
+
+                <h2>
+                    Tips for Successful Learning
+                </h2>
+
+            </div>
+
+
+            <div class="feature-grid">
+
+
+                <!-- Tip 1 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🎯
+                    </div>
+
+                    <h3>
+                        Set Goals
+                    </h3>
+
+                    <p>
+                        Set small daily learning goals
+                        to stay consistent.
+                    </p>
+
+                </div>
+
+
+                <!-- Tip 2 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        📝
+                    </div>
+
+                    <h3>
+                        Take Notes
+                    </h3>
+
+                    <p>
+                        Write down important concepts
+                        while watching lessons.
+                    </p>
+
+                </div>
+
+
+                <!-- Tip 3 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        💻
+                    </div>
+
+                    <h3>
+                        Practice
+                    </h3>
+
+                    <p>
+                        Practice what you learn by
+                        building small projects.
+                    </p>
+
+                </div>
+
+
+                <!-- Tip 4 -->
+
+                <div class="feature-card">
+
+                    <div class="feature-icon">
+                        🔄
+                    </div>
+
+                    <h3>
+                        Stay Consistent
+                    </h3>
+
+                    <p>
+                        A little learning every day
+                        can make a big difference.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+
+            <!-- About -->
+
+            <div class="footer-column">
+
+                <a
+                    href="index.html"
+                    class="logo footer-logo"
+                >
+                    Learn<span>Hub</span>
+                </a>
+
+                <p>
+                    Learn new skills, build your career,
+                    and achieve your goals with LearnHub.
+                </p>
+
+            </div>
+
+
+            <!-- Quick Links -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Quick Links
+                </h3>
+
+                <a href="index.html">
+                    Home
+                </a>
+
+                <a href="courses.html">
+                    Courses
+                </a>
+
+                <a href="about.html">
+                    About
+                </a>
+
+                <a href="contact.html">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Account -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Account
+                </h3>
+
+                <a href="login.html">
+                    Login
+                </a>
+
+                <a href="register.html">
+                    Register
+                </a>
+
+                <a href="my-courses.html">
+                    My Courses
+                </a>
+
+                <a href="profile.html">
+                    Profile
+                </a>
+
+            </div>
+
+
+            <!-- Support -->
+
+            <div class="footer-column">
+
+                <h3>
+                    Support
+                </h3>
+
+                <a href="faq.html">
+                    FAQ
+                </a>
+
+                <a href="contact.html">
+                    Help Center
+                </a>
+
+                <a href="contact.html">
+                    Contact Us
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Copyright -->
+
+        <div class="footer-bottom">
+
+            <div class="container">
+
+                <p>
+                    &copy; 2026 LearnHub. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
